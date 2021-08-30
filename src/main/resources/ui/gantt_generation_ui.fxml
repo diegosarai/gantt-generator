@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GanttGenerationController">
+   <children>
+      <TableView fx:id="ganttTable" editable="true" layoutX="34.0" layoutY="91.0" prefHeight="228.0" prefWidth="716.0">
+        <columns>
+            <TableColumn fx:id="backlogItemColumn" prefWidth="75.0" text="Backlog Item" />
+            <TableColumn fx:id="qaColumn" text="QA" />
+            <TableColumn fx:id="dataArchitectColumn" prefWidth="99.0" text="Data Architect" />
+            <TableColumn fx:id="softwareEngineerColumn" prefWidth="114.0" text="Software Engineer" />
+            <TableColumn fx:id="solutionArchiectColumn" prefWidth="121.0" text="Solution Architect" />
+            <TableColumn fx:id="effortColumn" prefWidth="75.0" text="Effort" />
+            <TableColumn fx:id="startColumn" prefWidth="75.0" text="Start" />
+            <TableColumn fx:id="stopColumn" prefWidth="75.0" text="Stop" />
+        </columns>
+      </TableView>
+      <Button layoutX="673.0" layoutY="448.0" mnemonicParsing="false" onAction="#executeGantt" prefHeight="35.0" prefWidth="77.0" text="Execute" />
+      <Label layoutX="34.0" layoutY="360.0" text="Number of Sprints" />
+      <TextField fx:id="txtNumberSprints" layoutX="145.0" layoutY="356.0" prefHeight="25.0" prefWidth="69.0" />
+   </children>
+</Pane>

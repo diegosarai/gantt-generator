@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CompanyPoolController">
+   <children>
+      <Label layoutX="227.0" layoutY="24.0" text="Company Pool">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="109.0" text="QA">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="145.0" text="Data Architect">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="182.0" text="Solution Architect">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="218.0" text="Software Engineer">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQaAmount" layoutX="259.0" layoutY="115.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtDataArchitectAmount" layoutX="259.0" layoutY="151.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtSolutionArchitectAmount" layoutX="259.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtSoftwareEngineerAmount" layoutX="259.0" layoutY="224.0" prefHeight="25.0" prefWidth="174.0" />
+      <Button layoutX="517.0" layoutY="346.0" mnemonicParsing="false" onAction="#navigateAndConfirmPool" text="Confirmar" />
+   </children>
+</Pane>
